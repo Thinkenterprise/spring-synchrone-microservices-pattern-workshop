@@ -1,0 +1,7 @@
+security:
+  basic:
+    enabled: false
+    
+fortune:
+  fallbackFortune: Local fortune configuration 
+    
