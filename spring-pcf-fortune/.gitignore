@@ -1,2 +1,11 @@
-/.classpath
-/.project
+.gradle
+.idea
+build
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings
+target
+.DS_Store
