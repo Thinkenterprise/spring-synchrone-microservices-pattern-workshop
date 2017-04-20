@@ -1,0 +1,9 @@
+applications:
+- name: fortunegateway
+  memory: 1024M
+  host: fortunes-${random-word}
+  path: target\spring-pcf-fortune-gateway-0.0.1-SNAPSHOT.jar
+  services:
+  - service-registry
+env:
+  CF_TARGET: https://api.sys.mydata.msg.de
