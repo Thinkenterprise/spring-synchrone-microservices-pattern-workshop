@@ -1,5 +1,5 @@
 applications:
-- name: fortune-service
+- name: fortuneservice
   memory: 1024M
   instances: 1
   host: fortunes-${random-word}
