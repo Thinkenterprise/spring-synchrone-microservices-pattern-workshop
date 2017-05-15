@@ -1,0 +1,28 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+      
+  oauth2:
+    resource:
+      user-info-uri: http://localhost:9999/uaa/user
+      
+security:      
+  oauth2:
+    resource:
+      user-info-uri: http://localhost:9999/uaa/user
+      
+cf:
+  instance:
+    index: 1
+    
+server:
+  port: 9001
+  contextPath: /resource
+  
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+  
