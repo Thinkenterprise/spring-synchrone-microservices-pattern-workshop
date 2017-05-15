@@ -1,0 +1,5 @@
+applications:
+- name: securityServer
+  memory: 1024M
+  host: fortunes-${random-word}
+  path: target\spring-pcf-fortune-0.0.1-SNAPSHOT.jar
