@@ -39,7 +39,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ApplicationAuthorizationServer   {
 
-	private OAuth2AuthenticationProcessingFilter test;
+	
 		
 	public static void main(String[] args) {
         SpringApplication.run(ApplicationAuthorizationServer.class, args);

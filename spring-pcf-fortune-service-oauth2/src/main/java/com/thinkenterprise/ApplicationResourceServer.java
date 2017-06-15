@@ -32,7 +32,6 @@ import org.springframework.security.oauth2.provider.authentication.OAuth2Authent
 public class ApplicationResourceServer {
 	
 	
-
 	public static void main(String[] args) {
         SpringApplication.run(ApplicationResourceServer.class, args);
     }

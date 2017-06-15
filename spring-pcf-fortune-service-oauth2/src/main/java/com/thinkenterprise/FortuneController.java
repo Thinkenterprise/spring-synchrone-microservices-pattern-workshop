@@ -20,7 +20,7 @@ public class FortuneController {
 	@Autowired
 	FortuneRepository fortuneRepository;
 
-	//@PreAuthorize("#oauth2.hasScope('random')")
+	@PreAuthorize("#oauth2.hasScope('random')")
 	@RequestMapping("/random")
 	public Fortune fortune() {
 		logger.info("FortuneController:fortune called ...");

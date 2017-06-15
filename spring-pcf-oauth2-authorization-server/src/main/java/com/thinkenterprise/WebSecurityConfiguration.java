@@ -21,6 +21,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter{
 	 
 	/**
+	 * Configuration for basic authentification 
 	 * Normally all request are secured. 
 	 * Customize the security constraints for our authorization server. 
 	 * Security is necessary for calling /oauth/authorize to get an authorization code. 
@@ -33,10 +34,6 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter{
 	@Override
      protected void configure(HttpSecurity http) throws Exception {
 
-		/*
-		http.httpBasic().
-			and().authorizeRequests().antMatchers("/oauth/authorize").permitAll().anyRequest().authenticated();
-*/
 		http.csrf().disable();
 		http.httpBasic().and().authorizeRequests().antMatchers("/oauth/authorize").authenticated().
 						 and().authorizeRequests().antMatchers("/oauth/token").authenticated().
@@ -45,7 +42,8 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter{
 
 	
 	/**
-	 * Crean Memory User with name and password and associated roles 
+	 * Configuration for basic authentification 
+	 * Create an in Memory User with name and password and associated roles 
 	 * 
 	 * @author M. Schäfer 
 	 * 
